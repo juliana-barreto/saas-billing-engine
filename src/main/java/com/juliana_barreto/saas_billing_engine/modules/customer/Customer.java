@@ -1,7 +1,7 @@
-package com.juliana_barreto.SubscriptionEngine.modules.customer;
+package com.juliana_barreto.saas_billing_engine.modules.customer;
 
-import com.juliana_barreto.SubscriptionEngine.modules.subscription.Subscription;
-import com.juliana_barreto.SubscriptionEngine.shared.BaseEntity;
+import com.juliana_barreto.saas_billing_engine.modules.subscription.Subscription;
+import com.juliana_barreto.saas_billing_engine.shared.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;

@@ -1,4 +1,4 @@
-package com.juliana_barreto.SubscriptionEngine;
+package com.juliana_barreto.saas_billing_engine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

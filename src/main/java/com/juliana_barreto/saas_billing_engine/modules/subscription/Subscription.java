@@ -1,9 +1,9 @@
-package com.juliana_barreto.SubscriptionEngine.modules.subscription;
+package com.juliana_barreto.saas_billing_engine.modules.subscription;
 
-import com.juliana_barreto.SubscriptionEngine.modules.customer.Customer;
-import com.juliana_barreto.SubscriptionEngine.modules.invoice.Invoice;
-import com.juliana_barreto.SubscriptionEngine.modules.plan.Plan;
-import com.juliana_barreto.SubscriptionEngine.shared.BaseEntity;
+import com.juliana_barreto.saas_billing_engine.modules.customer.Customer;
+import com.juliana_barreto.saas_billing_engine.modules.invoice.Invoice;
+import com.juliana_barreto.saas_billing_engine.modules.plan.Plan;
+import com.juliana_barreto.saas_billing_engine.shared.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

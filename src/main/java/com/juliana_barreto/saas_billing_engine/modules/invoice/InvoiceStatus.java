@@ -1,4 +1,4 @@
-package com.juliana_barreto.SubscriptionEngine.modules.invoice;
+package com.juliana_barreto.saas_billing_engine.modules.invoice;
 
 public enum InvoiceStatus {
   PENDING,

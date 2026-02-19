@@ -1,4 +1,4 @@
-package com.juliana_barreto.SubscriptionEngine.shared;
+package com.juliana_barreto.saas_billing_engine.shared;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
