@@ -9,10 +9,13 @@ import org.springframework.data.repository.query.Param;
 
 public interface SubscriptionRepository extends JpaRepository<Subscription, UUID> {
 
-  // Checks if a customer already has an active subscription
+  // Checks if the customer already has an active subscription
   boolean existsByCustomerIdAndStatus(UUID customerId, Subscription status);
 
-  // Brings all active subscriptions for a customer
+  // Retrieves active subscriptions for a quick status check
+  List<Subscription> findByCustomerIdAndStatus(UUID customerId, SubscriptionStatus status);
+
+  // Fetches the subscription with customer and plan
   @Query("""
       SELECT s FROM Subscription s
       JOIN FETCH s.customer
@@ -20,11 +23,12 @@ public interface SubscriptionRepository extends JpaRepository<Subscription, UUID
       WHERE s.customer.id = :customerId
       AND s.status = :status
       """)
-  List<Subscription> findActiveSubscriptionsWithPlan(
+  List<Subscription> findActiveSubscriptionsWithRelations(
       @Param("customerId") UUID customerId,
       @Param("status") SubscriptionStatus status
   );
 
+  // Fetches all subscriptions due for billing today, including plan and customer data
   @Query("""
       SELECT s FROM Subscription s
       JOIN FETCH s.customer
@@ -32,7 +36,7 @@ public interface SubscriptionRepository extends JpaRepository<Subscription, UUID
       WHERE s.status = :status
       AND s.nextBillingDate <= :targetDate
       """)
-  List<Subscription> findSubscriptionsDueForBilling(
+  List<Subscription> findDueForBillingWithRelations(
       @Param("status") SubscriptionStatus status,
       @Param("targetDate") LocalDate targetDate
   );

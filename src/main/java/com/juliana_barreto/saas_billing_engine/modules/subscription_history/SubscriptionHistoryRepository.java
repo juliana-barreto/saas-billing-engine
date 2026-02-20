@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface SubscriptionHistoryRepository extends JpaRepository<SubscriptionHistory, UUID> {
 
+  // Retrieves the exact last snapshot
   Optional<SubscriptionHistory> findFirstBySubscriptionIdOrderByCreatedAtDesc(UUID subscriptionId);
 
 }

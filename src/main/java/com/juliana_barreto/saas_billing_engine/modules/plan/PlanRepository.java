@@ -7,7 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PlanRepository extends JpaRepository<Plan, UUID> {
 
+  // Returns all plans currently available for sale
   List<Plan> findAllByActiveTrue();
 
+  // Fetches a specific plan, ensuring it is active
   Optional<Plan> findByIdAndActiveTrue(UUID id);
 }
