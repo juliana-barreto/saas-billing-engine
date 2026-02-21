@@ -1,4 +1,4 @@
-package com.juliana_barreto.saas_billing_engine.modules.subscription;
+package com.juliana_barreto.saas_billing_engine.modules.subscription.enums;
 
 public enum SubscriptionStatus {
   ACTIVE,

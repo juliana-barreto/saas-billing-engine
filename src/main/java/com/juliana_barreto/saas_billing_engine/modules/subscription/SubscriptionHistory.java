@@ -1,6 +1,6 @@
-package com.juliana_barreto.saas_billing_engine.modules.subscription_history;
+package com.juliana_barreto.saas_billing_engine.modules.subscription;
 
-import com.juliana_barreto.saas_billing_engine.modules.subscription.Subscription;
+import com.juliana_barreto.saas_billing_engine.modules.subscription.enums.SubscriptionChangeType;
 import com.juliana_barreto.saas_billing_engine.shared.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

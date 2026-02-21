@@ -1,4 +1,4 @@
-package com.juliana_barreto.saas_billing_engine.modules.subscription_history;
+package com.juliana_barreto.saas_billing_engine.modules.subscription;
 
 import java.util.Optional;
 import java.util.UUID;
