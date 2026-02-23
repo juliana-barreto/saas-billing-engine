@@ -1,5 +1,6 @@
-package com.juliana_barreto.saas_billing_engine.modules.plan;
+package com.juliana_barreto.saas_billing_engine.modules.plan.repositories;
 
+import com.juliana_barreto.saas_billing_engine.modules.plan.entities.Plan;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;

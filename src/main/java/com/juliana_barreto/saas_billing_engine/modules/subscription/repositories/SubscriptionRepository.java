@@ -1,5 +1,6 @@
-package com.juliana_barreto.saas_billing_engine.modules.subscription;
+package com.juliana_barreto.saas_billing_engine.modules.subscription.repositories;
 
+import com.juliana_barreto.saas_billing_engine.modules.subscription.entities.Subscription;
 import com.juliana_barreto.saas_billing_engine.modules.subscription.enums.SubscriptionStatus;
 import java.time.LocalDate;
 import java.util.List;

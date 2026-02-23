@@ -1,5 +1,6 @@
-package com.juliana_barreto.saas_billing_engine.modules.subscription;
+package com.juliana_barreto.saas_billing_engine.modules.subscription.repositories;
 
+import com.juliana_barreto.saas_billing_engine.modules.subscription.entities.SubscriptionHistory;
 import java.util.Optional;
 import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;

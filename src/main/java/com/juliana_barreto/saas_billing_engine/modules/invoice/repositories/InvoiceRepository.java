@@ -1,5 +1,6 @@
-package com.juliana_barreto.saas_billing_engine.modules.invoice;
+package com.juliana_barreto.saas_billing_engine.modules.invoice.repositories;
 
+import com.juliana_barreto.saas_billing_engine.modules.invoice.entities.Invoice;
 import com.juliana_barreto.saas_billing_engine.modules.invoice.enums.InvoiceStatus;
 import java.time.LocalDate;
 import java.util.List;

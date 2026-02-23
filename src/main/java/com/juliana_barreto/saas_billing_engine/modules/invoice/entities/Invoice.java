@@ -1,7 +1,7 @@
-package com.juliana_barreto.saas_billing_engine.modules.invoice;
+package com.juliana_barreto.saas_billing_engine.modules.invoice.entities;
 
 import com.juliana_barreto.saas_billing_engine.modules.invoice.enums.InvoiceStatus;
-import com.juliana_barreto.saas_billing_engine.modules.subscription.Subscription;
+import com.juliana_barreto.saas_billing_engine.modules.subscription.entities.Subscription;
 import com.juliana_barreto.saas_billing_engine.shared.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
