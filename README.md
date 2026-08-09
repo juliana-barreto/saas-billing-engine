@@ -1,6 +1,5 @@
-# SaaS Billing Engine (Motor de Cobrança Recorrente Multi-Tenant)
-
-> API e Engine de Faturamento Recorrente Multi-Tenant de Alta Performance, focada em isolamento contextual de dados, cálculo pró-rata e auditoria financeira imutável.
+# Motor de Faturamento SaaS
+API e Engine de Faturamento Recorrente Multi-Tenant de Alta Performance, focada em isolamento contextual de dados, cálculo pró-rata e auditoria financeira imutável.
 
 <div align="center">
   <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
